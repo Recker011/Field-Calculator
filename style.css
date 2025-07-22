@@ -21,7 +21,8 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #2a4365;
@@ -102,6 +103,7 @@ button:hover {
   font-size: 14px;
   color: #2c7a7b;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 /* Instructions */
@@ -135,7 +137,7 @@ button:hover {
 
 /* 🌙 Dark Mode Styles */
 body.dark-mode {
-  background: #1a202c;
+  background: #121a23;
   color: #edf2f7;
 }
 
@@ -164,27 +166,27 @@ body.dark-mode select:focus {
 }
 
 body.dark-mode .result {
-  background-color: #234e52;
+  background-color: #2c7a7b;
   border-left-color: #81e6d9;
-  color: #e6fffa;
+  color: #ffffff;
 }
 
 body.dark-mode .result strong {
-  color: #e6fffa;
+  color: #ffffff;
 }
 
 body.dark-mode .result .amount {
-  color: #c6f6d5;
+  color: #f6e05e;
 }
 
 body.dark-mode .result ul {
-  color: #b2f5ea;
+  color: #e2e8f0;
 }
 
 body.dark-mode .instructions {
-  background-color: #7b341e;
-  color: #fffbea;
-  border-left-color: #fbd38d;
+  background-color: #4a2c0a;
+  color: #fefcbf;
+  border-left-color: #f6ad55;
 }
 
 body.dark-mode a {
