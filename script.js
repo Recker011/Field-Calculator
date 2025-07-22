@@ -23,19 +23,20 @@ function calculateTotal() {
   const total = jobValue + gst - discount + surcharge - deposit;
 
   document.getElementById("result").innerHTML = `
-      <strong>Total to Collect:</strong> $${total.toFixed(2)}<br/>
-      <ul>
-        <li>Job Value: $${jobValue.toFixed(2)}</li>
-        <li>GST (10%): $${gst.toFixed(2)}</li>
-        <li>Discount (${discountPercent}%): -$${discount.toFixed(2)}</li>
-        ${
-          surcharge > 0
-            ? `<li>Card Surcharge (2.2%): $${surcharge.toFixed(2)}</li>`
-            : ""
-        }
-        <li>Deposit Deducted: -$${deposit.toFixed(2)}</li>
-      </ul>
-    `;
+  <strong>Total to Collect:</strong>
+  <div class="amount">$${total.toFixed(2)}</div>
+  <ul>
+    <li>Job Value: $${jobValue.toFixed(2)}</li>
+    <li>GST (10%): $${gst.toFixed(2)}</li>
+    <li>Discount (${discountPercent}%): -$${discount.toFixed(2)}</li>
+    ${
+      surcharge > 0
+        ? `<li>Card Surcharge (2.2%): $${surcharge.toFixed(2)}</li>`
+        : ""
+    }
+    <li>Deposit Deducted: -$${deposit.toFixed(2)}</li>
+  </ul>
+`;
 
   let instructions = "";
 
