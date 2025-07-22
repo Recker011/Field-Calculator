@@ -74,7 +74,6 @@ button:hover {
 
 .result {
   margin-top: 30px;
-  font-size: 18px;
   background: #e6fffa;
   padding: 20px;
   border-radius: 10px;
@@ -82,9 +81,18 @@ button:hover {
   color: #234e52;
 }
 
+.result strong {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+  color: #1a202c;
+}
+
 .result ul {
   margin-top: 10px;
   padding-left: 20px;
+  font-size: 14px;
+  color: #2c7a7b;
 }
 
 .instructions {
@@ -139,10 +147,12 @@ body.dark-mode select:focus {
   border-color: #63b3ed;
 }
 
-body.dark-mode .result {
-  background-color: #234e52;
-  border-left-color: #81e6d9;
+body.dark-mode .result strong {
   color: #e6fffa;
+}
+
+body.dark-mode .result ul {
+  color: #b2f5ea;
 }
 
 body.dark-mode .instructions {
