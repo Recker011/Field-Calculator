@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>247 Victoria Cleaners - Pricing Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>247 Victoria Cleaners</h1>
+      <h2>Payment Calculator</h2>
+
+      <label for="jobValue">Job Value ($):</label>
+      <input type="number" id="jobValue" placeholder="Enter job value" />
+
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod">
+        <option value="bank">Bank Transfer</option>
+        <option value="cash">Cash</option>
+        <option value="card">Card (Stripe)</option>
+      </select>
+
+      <label for="discount">Discount (%) [Default: 0%]:</label>
+      <input type="number" id="discount" value="0" />
+
+      <label for="deposit">Deposit Amount ($) [Default: 100]:</label>
+      <input type="number" id="deposit" value="100" />
+
+      <button onclick="calculateTotal()">Calculate</button>
+
+      <div id="result" class="result"></div>
+
+      <div id="instructions" class="instructions"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
